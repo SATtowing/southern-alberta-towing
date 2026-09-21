@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Southern Alberta Towing | Towing & Recovery in Southern Alberta</title>
+
+  <meta name="description" content="Southern Alberta Towing provides professional towing, recovery and roadside assistance from Nanton, Alberta, serving communities throughout Southern Alberta.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111111;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #0b0b0b;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #f47b20;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #f47b20;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #f47b20;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 8%;
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.78)),
+        #202020;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #f47b20;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      line-height: 1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: #dddddd;
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .btn-orange {
+      background: #f47b20;
+      color: #111111;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #bdbdbd;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: #181818;
+    }
+
+    .service-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #222222;
+      padding: 32px;
+      border-top: 4px solid #f47b20;
+      border-radius: 4px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+    }
+
+    .service-card p {
+      color: #c7c7c7;
+    }
+
+    /* COMMERCIAL */
+
+    .commercial {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .commercial h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .commercial p {
+      color: #c7c7c7;
+      margin-bottom: 25px;
+    }
+
+    /* SERVICE AREA */
+
+    .area {
+      background: #181818;
+      text-align: center;
+    }
+
+    .area h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .area p {
+      max-width: 800px;
+      margin: auto;
+      color: #c7c7c7;
+    }
+
+    /* CALL TO ACTION */
+
+    .cta {
+      background: #f47b20;
+      color: #111111;
+      text-align: center;
+      padding: 55px 8%;
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      font-size: 1.15rem;
+      margin-bottom: 22px;
+    }
+
+    .cta .btn {
+      background: #111111;
+      color: white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #080808;
+      color: #aaaaaa;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    SOUTHERN ALBERTA <span>TOWING</span>
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#commercial">Commercial</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Southern Alberta
+      </div>
+
+      <h1>
+        Towing & Recovery
+      </h1>
+
+      <p>
+        Professional towing, recovery and roadside assistance
+        based in Nanton, Alberta and serving Southern Alberta.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn btn-orange" href="tel:4036520850">
+          Call 403-652-0850
+        </a>
+
+        <a class="btn btn-outline" href="#services">
+          Our Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="services" id="services">
+
+    <div class="section-title">
+
+      <h2>Our Services</h2>
+
+      <p>
+        Professional equipment and experienced operators
+        for towing, recovery and roadside assistance.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h3>Light Duty Towing</h3>
+        <p>
+          Towing and transportation for passenger vehicles,
+          pickups and other light-duty vehicles.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <h3>Heavy Duty Towing & Recovery</h3>
+        <p>
+          Heavy towing and recovery capabilities for commercial
+          vehicles and demanding recovery situations.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <h3>Roadside Assistance</h3>
+        <p>
+          Roadside support when you need help getting
+          safely back on the road.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="commercial">
+
+    <div class="commercial">
+
+      <h2>Commercial & Fleet Services</h2>
+
+      <p>
+        Southern Alberta Towing works with commercial operators
+        and businesses requiring dependable towing, recovery
+        and roadside support.
+      </p>
+
+      <a class="btn btn-orange" href="tel:4036520850">
+        Talk With Our Team
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="area" id="area">
+
+    <h2>Serving Southern Alberta</h2>
+
+    <p>
+      Based in Nanton, Alberta, Southern Alberta Towing provides
+      towing and recovery services throughout our Southern Alberta
+      service area.
+    </p>
+
+  </section>
+
+
+  <section class="cta" id="contact">
+
+    <h2>Need Assistance?</h2>
+
+    <p>
+      Call Southern Alberta Towing.
+    </p>
+
+    <a class="btn" href="tel:4036520850">
+      403-652-0850
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <p>
+    <strong>Southern Alberta Towing</strong><br>
+    1916 21 Street, Nanton, Alberta T0L 1R0<br>
+    403-652-0850
+  </p>
+
+  <p style="margin-top:15px;">
+    © 2026 Southern Alberta Towing. All Rights Reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
