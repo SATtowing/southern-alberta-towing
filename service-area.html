@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Service Area | Southern Alberta Towing</title>
+
+  <meta name="description" content="Southern Alberta Towing is headquartered in Nanton with operations in Nanton and Claresholm, providing 24/7 towing, roadside assistance and recovery throughout Southern Alberta and Alberta-wide by request.">
+
+  <link rel="canonical" href="https://southernalbertatowing.ca/service-area.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://southernalbertatowing.ca/#business",
+    "name": "Southern Alberta Towing",
+    "url": "https://southernalbertatowing.ca/",
+    "telephone": "+1-403-652-0850",
+    "email": "southernalbertatowing@gmail.com",
+    "description": "Southern Alberta Towing provides 24/7 towing, roadside assistance and recovery throughout Southern Alberta, with Alberta-wide service available by request.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1916 21 Street",
+      "addressLocality": "Nanton",
+      "addressRegion": "AB",
+      "postalCode": "T0L 1R0",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Southern Alberta"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Municipal District of Willow Creek No. 26"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Vulcan County"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Municipal District of Ranchland No. 66"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Foothills County"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Wheatland County"
+      },
+      {
+        "@type": "City",
+        "name": "Calgary"
+      },
+      {
+        "@type": "City",
+        "name": "Lethbridge"
+      },
+      {
+        "@type": "City",
+        "name": "Medicine Hat"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Alberta"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0d0d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(9, 9, 9, .97);
+      border-bottom: 3px solid #b87333;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 1.15;
+    }
+
+    .brand span {
+      color: #b87333;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      font-weight: 700;
+      font-size: .92rem;
+      transition: color .25s ease;
+    }
+
+    nav a:hover {
+      color: #b87333;
+    }
+
+    .nav-call {
+      background: #b87333;
+      color: #111111;
+      padding: 11px 18px;
+      border-radius: 5px;
+    }
+
+    .nav-call:hover {
+      background: #d28a52;
+      color: #111111;
+    }
+
+    /* HERO */
+
+    .area-hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5,5,5,.97) 0%,
+          rgba(5,5,5,.88) 40%,
+          rgba(5,5,5,.52) 72%,
+          rgba(5,5,5,.30) 100%
+        ),
+        url("images/southern-alberta-towing-fleet.jpg") center/cover no-repeat;
+    }
+
+    .area-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      background:
+        radial-gradient(
+          circle at 74% 45%,
+          rgba(184,115,51,.14),
+          transparent 33%
+        ),
+        linear-gradient(
+          180deg,
+          transparent 55%,
+          rgba(0,0,0,.82) 100%
+        );
+    }
+
+    .area-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 48%;
+      height: 4px;
+      background: #b87333;
+      box-shadow: 0 0 24px rgba(184,115,51,.45);
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 110px 0;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+
+      padding: 9px 14px;
+      margin-bottom: 23px;
+
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(0,0,0,.40);
+
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: 2.4px;
+    }
+
+    .hero-kicker::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #b87333;
+      box-shadow: 0 0 14px rgba(184,115,51,.75);
+    }
+
+    .area-hero h1 {
+      font-size: clamp(3.5rem, 7vw, 6.7rem);
+      line-height: .88;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      margin-bottom: 28px;
+      text-shadow: 0 8px 30px rgba(0,0,0,.5);
+    }
+
+    .area-hero h1 span {
+      color: #b87333;
+    }
+
+    .area-hero p {
+      color: #dedede;
+      max-width: 720px;
+      font-size: 1.16rem;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: #b87333;
+      color: #111111;
+    }
+
+    .button-primary:hover {
+      background: #d28a52;
+      box-shadow: 0 12px 28px rgba(0,0,0,.32);
+    }
+
+    .button-secondary {
+      border: 2px solid #ffffff;
+      background: rgba(0,0,0,.28);
+    }
+
+    .button-secondary:hover {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    /* BASE STRIP */
+
+    .base-strip {
+      background: #090909;
+      border-bottom: 1px solid #292929;
+      box-shadow: 0 16px 38px rgba(0,0,0,.38);
+    }
+
+    .base-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .base-item {
+      min-height: 115px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid #292929;
+    }
+
+    .base-item:last-child {
+      border-right: none;
+    }
+
+    .base-item strong {
+      color: #b87333;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .base-item span {
+      color: #999999;
+      margin-top: 5px;
+      font-size: .72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .area-hero {
+      padding: 0;
+    }
+
+    .eyebrow {
+      color: #b87333;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      max-width: 800px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2.4rem, 5vw, 4.1rem);
+      text-transform: uppercase;
+      line-height: .98;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 span {
+      color: #b87333;
+    }
+
+    .section-heading p {
+      color: #bdbdbd;
+      font-size: 1.05rem;
+    }
+
+    /* TWO BASES */
+
+    .bases {
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          rgba(184,115,51,.08),
+          transparent 28%
+        ),
+        #131313;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bases::before {
+      content: "SOUTHERN ALBERTA";
+      position: absolute;
+      right: 2%;
+      top: 40px;
+      color: rgba(255,255,255,.018);
+      font-size: clamp(5rem, 11vw, 10rem);
+      font-weight: 900;
+      line-height: .9;
+      text-align: right;
+      pointer-events: none;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .location-card {
+      min-height: 350px;
+      padding: 42px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(184,115,51,.11),
+          transparent 55%
+        ),
+        #1b1b1b;
+
+      border: 1px solid #2e2e2e;
+      border-bottom: 4px solid #b87333;
+
+      box-shadow: 0 18px 42px rgba(0,0,0,.28);
+
+      transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .location-card:hover {
+      transform: translateY(-6px);
+      border-color: #3c3c3c;
+      border-bottom-color: #d28a52;
+      box-shadow: 0 27px 55px rgba(0,0,0,.43);
+    }
+
+    .location-number {
+      color: #b87333;
+      font-size: .72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 18px;
+    }
+
+    .location-card h3 {
+      font-size: clamp(2.1rem, 4vw, 3.3rem);
+      line-height: .95;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .location-card p {
+      color: #bdbdbd;
+    }
+
+    .location-label {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 8px 12px;
+      border: 1px solid #454545;
+      color: #ffffff;
+      font-size: .7rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* COVERAGE */
+
+    .coverage {
+      background: #0b0b0b;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .coverage-card {
+      min-height: 180px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      background: #171717;
+      border: 1px solid #292929;
+      border-left: 4px solid #b87333;
+
+      transition:
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease;
+    }
+
+    .coverage-card:hover {
+      transform: translateY(-4px);
+      background: #1c1c1c;
+      border-color: #3b3b3b;
+      border-left-color: #d28a52;
+    }
+
+    .coverage-card small {
+      color: #b87333;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 1.8px;
+      margin-bottom: 6px;
+    }
+
+    .coverage-card h3 {
+      font-size: 1.35rem;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    /* ALBERTA WIDE */
+
+    .alberta-wide {
+      padding: 0;
+      background: #b87333;
+      color: #111111;
+    }
+
+    .alberta-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      min-height: 520px;
+    }
+
+    .alberta-copy {
+      padding: 75px max(6vw, 50px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .alberta-copy .eyebrow {
+      color: #111111;
+    }
+
+    .alberta-copy h2 {
+      font-size: clamp(2.7rem, 5vw, 4.8rem);
+      line-height: .92;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .alberta-copy p {
+      max-width: 660px;
+      font-size: 1.08rem;
+      font-weight: 650;
+      margin-bottom: 26px;
+    }
+
+    .dark-button {
+      display: inline-block;
+      width: fit-content;
+      padding: 15px 24px;
+      background: #101010;
+      color: #ffffff;
+      border: 2px solid #101010;
+      font-weight: 900;
+      text-transform: uppercase;
+      transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease;
+    }
+
+    .dark-button:hover {
+      transform: translateY(-2px);
+      background: transparent;
+      color: #111111;
+    }
+
+    .alberta-image {
+      min-height: 520px;
+      overflow: hidden;
+    }
+
+    .alberta-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: contrast(1.03);
+      transition: transform .4s ease;
+    }
+
+    .alberta-image:hover img {
+      transform: scale(1.025);
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: #121212;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service {
+      padding: 30px;
+      background: #1a1a1a;
+      border: 1px solid #2d2d2d;
+      box-shadow: 0 14px 34px rgba(0,0,0,.22);
+    }
+
+    .service span {
+      color: #b87333;
+      font-size: .68rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .service h3 {
+      margin: 10px 0 12px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+
+    .service p {
+      color: #bdbdbd;
+    }
+
+    /* LOCATION / QUOTE */
+
+    .quote-section {
+      background:
+        radial-gradient(
+          circle at 50% 10%,
+          rgba(184,115,51,.10),
+          transparent 30%
+        ),
+        #090909;
+
+      text-align: center;
+    }
+
+    .quote-section h2 {
+      max-width: 900px;
+      margin: 0 auto 22px;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .quote-section h2 span {
+      color: #b87333;
+    }
+
+    .quote-section p {
+      max-width: 760px;
+      margin: auto;
+      color: #bdbdbd;
+      font-size: 1.08rem;
+    }
+
+    .quote-phone {
+      display: block;
+      margin: 28px 0 12px;
+      color: #b87333;
+      font-size: clamp(2.3rem, 6vw, 4.3rem);
+      font-weight: 900;
+      transition:
+        color .25s ease,
+        transform .25s ease;
+    }
+
+    .quote-phone:hover {
+      color: #d28a52;
+      transform: translateY(-2px);
+    }
+
+    .quote-note {
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: .9rem !important;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+
+    /* CONTACT */
+
+    .contact-band {
+      background: #171717;
+      border-top: 1px solid #292929;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .contact-grid h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .contact-grid h2 span {
+      color: #b87333;
+    }
+
+    .contact-grid p {
+      color: #bdbdbd;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      background: #050505;
+      border-top: 1px solid #292929;
+      color: #8f8f8f;
+      font-size: .9rem;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    .footer-links {
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #b87333;
+      font-weight: 800;
+    }
+
+    .footer-links a:hover {
+      color: #d28a52;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      nav a:not(.nav-call) {
+        display: none;
+      }
+
+      .area-hero {
+        min-height: 620px;
+        align-items: flex-end;
+
+        background:
+          linear-gradient(
+            180deg,
+            rgba(0,0,0,.38) 0%,
+            rgba(0,0,0,.72) 48%,
+            rgba(0,0,0,.95) 100%
+          ),
+          url("images/southern-alberta-towing-fleet.jpg") center/cover no-repeat;
+      }
+
+      .hero-content {
+        padding: 110px 0 80px;
+      }
+
+      .location-grid,
+      .alberta-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-grid,
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .alberta-image {
+        min-height: 390px;
+      }
+
+      .contact-grid {
+        text-align: center;
+      }
+
+      .contact-grid .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 620px) {
+
+      .brand {
+        font-size: 1rem;
+      }
+
+      .nav-call {
+        padding: 10px 12px;
+        font-size: .82rem;
+      }
+
+      .area-hero h1 {
+        font-size: 3.15rem;
+        letter-spacing: -1px;
+      }
+
+      .hero-kicker {
+        font-size: .64rem;
+        letter-spacing: 1.5px;
+      }
+
+      .buttons .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .base-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .base-item {
+        border-right: none;
+        border-bottom: 1px solid #292929;
+      }
+
+      .base-item:last-child {
+        border-bottom: none;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .location-grid,
+      .coverage-grid,
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-card {
+        min-height: 0;
+        padding: 32px 26px;
+      }
+
+      .coverage-card {
+        min-height: 150px;
+      }
+
+      .alberta-copy {
+        padding: 60px 7%;
+      }
+
+      .dark-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button,
+      .dark-button,
+      .location-card,
+      .coverage-card,
+      .alberta-image img,
+      .quote-phone {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <a class="brand" href="index.html">
+        SOUTHERN ALBERTA<br>
+        <span>TOWING</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#bases">Our Bases</a>
+        <a href="#coverage">Service Area</a>
+        <a href="faq.html">FAQ</a>
+
+        <a class="nav-call" href="tel:4036520850">
+          Call 403-652-0850
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="area-hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-kicker">
+            Nanton • Claresholm • Southern Alberta
+          </div>
+
+          <h1>
+            Two Southern Alberta Bases.<br>
+            <span>One Very Large Service Area.</span>
+          </h1>
+
+          <p>
+            Headquartered in Nanton with operations in Nanton and Claresholm,
+            Southern Alberta Towing provides 24/7 towing, roadside assistance
+            and recovery throughout Southern Alberta, with service available
+            across Alberta by request.
+          </p>
+
+          <div class="buttons">
+
+            <a class="button button-primary" href="tel:4036520850">
+              Call 403-652-0850
+            </a>
+
+            <a class="button button-secondary" href="#coverage">
+              Explore Our Service Area
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BASE STRIP -->
+
+    <div class="base-strip">
+
+      <div class="container base-grid">
+
+        <div class="base-item">
+          <strong>Nanton</strong>
+          <span>Head Office & Operations</span>
+        </div>
+
+        <div class="base-item">
+          <strong>Claresholm</strong>
+          <span>Operations</span>
+        </div>
+
+        <div class="base-item">
+          <strong>Alberta</strong>
+          <span>Province-Wide By Request</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TWO BASES -->
+
+    <section class="bases" id="bases">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Our Southern Alberta Bases
+          </div>
+
+          <h2>
+            Headquartered In Nanton.<br>
+            <span>Operating From Nanton & Claresholm.</span>
+          </h2>
+
+          <p>
+            Two operating bases position Southern Alberta Towing to provide
+            towing, roadside assistance and recovery throughout a broad
+            portion of Southern Alberta.
+          </p>
+
+        </div>
+
+        <div class="location-grid">
+
+          <article class="location-card">
+
+            <div class="location-number">
+              Head Office & Operations
+            </div>
+
+            <h3>
+              Nanton
+            </h3>
+
+            <p>
+              Southern Alberta Towing's head office is located in Nanton,
+              Alberta. Nanton also serves as one of our operating bases for
+              towing, roadside assistance and recovery throughout Southern
+              Alberta.
+            </p>
+
+            <div class="location-label">
+              1916 21 Street • Nanton, Alberta
+            </div>
+
+          </article>
+
+          <article class="location-card">
+
+            <div class="location-number">
+              Southern Operations
+            </div>
+
+            <h3>
+              Claresholm
+            </h3>
+
+            <p>
+              Southern Alberta Towing also operates from Claresholm,
+              strengthening our ability to respond throughout the southern
+              portion of our primary service region.
+            </p>
+
+            <div class="location-label">
+              Claresholm • Alberta
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- COVERAGE -->
+
+    <section class="coverage" id="coverage">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Primary Service Region
+          </div>
+
+          <h2>
+            Serving Southern<br>
+            <span>Alberta</span>
+          </h2>
+
+          <p>
+            Our primary service region spans Southern Alberta. These are
+            some of the municipalities, counties and major centres we serve.
+            If your location is not listed, that does not mean we won't go there.
+          </p>
+
+        </div>
+
+        <div class="coverage-grid">
+
+          <article class="coverage-card">
+            <small>Municipal District</small>
+            <h3>MD of Willow Creek</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>County</small>
+            <h3>Vulcan County</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>Municipal District</small>
+            <h3>MD of Ranchland</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>County</small>
+            <h3>Foothills County</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>County</small>
+            <h3>Wheatland County</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>Major Centre</small>
+            <h3>Calgary</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>Major Centre</small>
+            <h3>Lethbridge</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>Major Centre</small>
+            <h3>Medicine Hat</h3>
+          </article>
+
+          <article class="coverage-card">
+            <small>And Beyond</small>
+            <h3>Southern Alberta</h3>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ALBERTA WIDE -->
+
+    <section class="alberta-wide">
+
+      <div class="alberta-grid">
+
+        <div class="alberta-copy">
+
+          <div class="eyebrow">
+            Need Us Farther Away?
+          </div>
+
+          <h2>
+            Alberta-Wide<br>
+            By Request.
+          </h2>
+
+          <p>
+            Our primary service region is Southern Alberta, but our trucks
+            are not limited by a county line. Towing and recovery service
+            can be arranged throughout Alberta based on the location,
+            service required and availability.
+          </p>
+
+          <p>
+            Call us with your location, destination and vehicle information
+            and we'll discuss the service and provide a quote before dispatch.
+          </p>
+
+          <a class="dark-button" href="tel:4036520850">
+            Call For A Quote
+          </a>
+
+        </div>
+
+        <div class="alberta-image">
+
+          <img
+            src="images/heavy-duty-recovery.jpg"
+            alt="Southern Alberta Towing recovery equipment serving Alberta"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            More Than A Dot On A Map
+          </div>
+
+          <h2>
+            The Service You Need.<br>
+            <span>Where You Need It.</span>
+          </h2>
+
+          <p>
+            Our service area supports a range of towing, transport and
+            recovery needs for motorists, commercial operators and fleets.
+          </p>
+
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service">
+
+            <span>Towing</span>
+
+            <h3>
+              Vehicle Towing & Transport
+            </h3>
+
+            <p>
+              Towing and transport for passenger vehicles, trucks,
+              classics, sports cars, projects and specialty vehicles.
+            </p>
+
+          </article>
+
+          <article class="service">
+
+            <span>Recovery</span>
+
+            <h3>
+              Accident & Winch Recovery
+            </h3>
+
+            <p>
+              Recovery support for accident scenes, vehicles off the road
+              and difficult recovery situations.
+            </p>
+
+          </article>
+
+          <article class="service">
+
+            <span>Commercial</span>
+
+            <h3>
+              Commercial & Fleet
+            </h3>
+
+            <p>
+              Towing and recovery support for commercial operators,
+              fleets and businesses throughout our service region.
+            </p>
+
+          </article>
+
+          <article class="service">
+
+            <span>Heavy Duty</span>
+
+            <h3>
+              Commercial Recovery
+            </h3>
+
+            <p>
+              Recovery capability for commercial vehicles and challenging
+              roadside incidents.
+            </p>
+
+          </article>
+
+          <article class="service">
+
+            <span>Specialty Transport</span>
+
+            <h3>
+              Motorcycles
+            </h3>
+
+            <p>
+              Motorcycle transport using our dedicated motorcycle trailer.
+            </p>
+
+          </article>
+
+          <article class="service">
+
+            <span>Recreational</span>
+
+            <h3>
+              Holiday Trailers
+            </h3>
+
+            <p>
+              Towing service for holiday trailers based on the trailer,
+              location and circumstances.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quote-section">
+
+      <div class="container">
+
+        <div class="eyebrow">
+          Not Sure If You're In Our Area?
+        </div>
+
+        <h2>
+          Call Anyway.<br>
+          <span>We May Be Closer Than You Think.</span>
+        </h2>
+
+        <p>
+          Tell us where you are, where you need to go, what you're driving
+          and what happened. We'll determine whether we can assist and
+          provide a quote before arranging the service.
+        </p>
+
+        <a class="quote-phone" href="tel:4036520850">
+          403-652-0850
+        </a>
+
+        <p class="quote-note">
+          24/7 Towing & Recovery
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact-band">
+
+      <div class="container contact-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            Southern Alberta Towing
+          </div>
+
+          <h2>
+            Questions About Your <span>Location?</span>
+          </h2>
+
+          <p>
+            Head Office: 1916 21 Street, Nanton, Alberta T0L 1R0
+          </p>
+
+        </div>
+
+        <a class="button button-primary" href="faq.html">
+          Visit Our FAQ
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="service-area.html">
+          Service Area
+        </a>
+
+        <a href="faq.html">
+          FAQ
+        </a>
+
+        <a
+          href="https://www.shutterclose.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Shutter Close Photography
+        </a>
+
+      </div>
+
+      <strong>
+        Southern Alberta Towing
+      </strong>
+
+      <br>
+
+      Head Office: 1916 21 Street, Nanton, Alberta T0L 1R0
+
+      <br>
+
+      Operations: Nanton & Claresholm
+
+      <br>
+
+      403-652-0850
+
+      <br><br>
+
+      © 2026 Southern Alberta Towing. All rights reserved.
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
