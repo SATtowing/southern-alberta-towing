@@ -31,7 +31,7 @@
     "name": "Southern Alberta"
   }
 }
-</script>
+  </script>
 
   <style>
     * {
@@ -99,13 +99,13 @@
 
     nav {
       display: flex;
-      gap: 24px;
+      gap: 22px;
       align-items: center;
     }
 
     nav a {
       font-weight: 700;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       transition: color .25s ease;
     }
 
@@ -213,7 +213,6 @@
       font-weight: 900;
       letter-spacing: 3px;
       margin-bottom: 12px;
-      text-shadow: 0 0 24px rgba(184,115,51,.18);
     }
 
     .hero h1 {
@@ -241,7 +240,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 0 0 34px;
+      margin-bottom: 34px;
       color: #ffffff;
       font-weight: 900;
       text-transform: uppercase;
@@ -274,7 +273,8 @@
       transition:
         transform .25s ease,
         box-shadow .25s ease,
-        background .25s ease;
+        background .25s ease,
+        color .25s ease;
     }
 
     .button:hover {
@@ -303,7 +303,7 @@
       color: #111111;
     }
 
-    /* CREDIBILITY STRIP */
+    /* CREDIBILITY */
 
     .intro-strip {
       background: #0a0a0a;
@@ -353,7 +353,7 @@
       letter-spacing: 1.5px;
     }
 
-    /* SECTIONS */
+    /* GENERAL */
 
     section {
       padding: 90px 0;
@@ -555,10 +555,6 @@
       align-items: center;
     }
 
-    .commercial-image {
-      position: relative;
-    }
-
     .commercial-image img {
       height: 480px;
       object-fit: cover;
@@ -595,7 +591,7 @@
       margin: 6px 8px 6px 0;
     }
 
-    /* RECOVERY GALLERY */
+    /* GALLERY */
 
     .gallery {
       background: #0d0d0d;
@@ -648,16 +644,146 @@
       font-weight: 600;
     }
 
+    /* FAQ PREVIEW */
+
+    .faq-preview {
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(184,115,51,.09),
+          transparent 30%
+        ),
+        #111111;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faq-preview::before {
+      content: "ANSWERS";
+      position: absolute;
+      right: 3%;
+      top: 35px;
+      font-size: clamp(5rem, 13vw, 11rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -5px;
+      color: rgba(255,255,255,.018);
+      pointer-events: none;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 65px;
+      align-items: start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .faq-intro {
+      position: sticky;
+      top: 120px;
+    }
+
+    .faq-intro h2 {
+      font-size: clamp(2.4rem, 5vw, 4.1rem);
+      line-height: .95;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .faq-intro h2 span {
+      color: #b87333;
+    }
+
+    .faq-intro p {
+      color: #bdbdbd;
+      margin-bottom: 28px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .faq-list details {
+      background: #191919;
+      border: 1px solid #2c2c2c;
+      border-left: 4px solid #b87333;
+      transition:
+        background .25s ease,
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .faq-list details:hover {
+      transform: translateY(-2px);
+      background: #1d1d1d;
+      border-color: #3a3a3a;
+      border-left-color: #d28a52;
+      box-shadow: 0 14px 30px rgba(0,0,0,.25);
+    }
+
+    .faq-list details[open] {
+      background: #1d1d1d;
+    }
+
+    .faq-list summary {
+      position: relative;
+      list-style: none;
+      cursor: pointer;
+      padding: 23px 60px 23px 23px;
+      font-size: 1.02rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-list summary::after {
+      content: "+";
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #b87333;
+      font-size: 1.7rem;
+      font-weight: 400;
+      transition: transform .25s ease;
+    }
+
+    .faq-list details[open] summary::after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 23px 24px;
+      color: #bdbdbd;
+    }
+
+    .faq-answer strong {
+      color: #ffffff;
+    }
+
+    .faq-answer a {
+      color: #b87333;
+      font-weight: 800;
+    }
+
     /* CONTACT */
 
     .contact {
       text-align: center;
-      background: #101010;
-    }
-
-    .contact .container {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      background:
+        radial-gradient(
+          circle at 50% 5%,
+          rgba(184,115,51,.08),
+          transparent 28%
+        ),
+        #101010;
     }
 
     .contact h2 {
@@ -692,7 +818,6 @@
     .email-link {
       color: #b87333;
       font-weight: 700;
-      transition: color .25s ease;
     }
 
     .email-link:hover {
@@ -704,17 +829,35 @@
     footer {
       background: #050505;
       border-top: 1px solid #2b2b2b;
-      padding: 32px 0;
+      padding: 38px 0;
       text-align: center;
       color: #8e8e8e;
       font-size: .9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links a {
+      color: #b87333;
+      font-weight: 800;
+      transition: color .25s ease;
+    }
+
+    .footer-links a:hover {
+      color: #d28a52;
     }
 
     footer strong {
       color: #ffffff;
     }
 
-    /* DEPTH & ENTRANCE MOTION */
+    /* MOTION */
 
     .hero-content,
     .section-heading,
@@ -723,6 +866,7 @@
     .commercial-copy,
     .commercial-image,
     .gallery-grid img,
+    .faq-layout,
     .contact .container {
       animation: riseIn .7s ease both;
     }
@@ -780,8 +924,17 @@
       .service-grid,
       .feature,
       .commercial-grid,
-      .gallery-grid {
+      .gallery-grid,
+      .faq-layout {
         grid-template-columns: 1fr;
+      }
+
+      .faq-layout {
+        gap: 35px;
+      }
+
+      .faq-intro {
+        position: static;
       }
 
       .feature-image img,
@@ -851,9 +1004,20 @@
         text-align: center;
         margin: 10px 0;
       }
-    }
 
-    /* ACCESSIBILITY */
+      .faq-intro .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .faq-list summary {
+        padding: 21px 55px 21px 20px;
+      }
+
+      .faq-answer {
+        padding: 0 20px 22px;
+      }
+    }
 
     @media (prefers-reduced-motion: reduce) {
 
@@ -868,6 +1032,7 @@
       .commercial-copy,
       .commercial-image,
       .gallery-grid img,
+      .faq-layout,
       .contact .container {
         animation: none;
       }
@@ -878,7 +1043,8 @@
       .commercial-image img,
       .gallery-grid img,
       .button,
-      .phone {
+      .phone,
+      .faq-list details {
         transition: none;
       }
     }
@@ -890,7 +1056,7 @@
   <header>
     <div class="container nav">
 
-      <a class="brand" href="#">
+      <a class="brand" href="index.html">
         SOUTHERN ALBERTA<br>
         <span>TOWING</span>
       </a>
@@ -900,6 +1066,8 @@
         <a href="#heavy">Heavy Duty</a>
         <a href="#commercial">Commercial</a>
         <a href="#area">Service Area</a>
+        <a href="faq.html">FAQ</a>
+
         <a class="nav-call" href="tel:4036520850">
           Call 403-652-0850
         </a>
@@ -1244,6 +1412,93 @@
       </div>
     </section>
 
+    <!-- FAQ PREVIEW -->
+
+    <section class="faq-preview" id="faq">
+      <div class="container faq-layout">
+
+        <div class="faq-intro">
+
+          <div class="eyebrow">
+            Questions? We Have Answers.
+          </div>
+
+          <h2>
+            Before The Truck<br>
+            <span>Hits The Road</span>
+          </h2>
+
+          <p>
+            Wondering about pricing, AMA service, specialty vehicles or
+            what information we need when you call? Start here or visit
+            our complete FAQ resource.
+          </p>
+
+          <a class="button button-primary" href="faq.html">
+            View All FAQs
+          </a>
+
+        </div>
+
+        <div class="faq-list">
+
+          <details>
+            <summary>
+              Will I receive a quote before a tow truck is dispatched?
+            </summary>
+
+            <div class="faq-answer">
+              Yes. We can provide a quote before dispatching a tow truck.
+              Call with your location, destination, vehicle information
+              and a brief description of the situation so we can provide
+              pricing based on the service required.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              I have AMA. Can I book service directly through you?
+            </summary>
+
+            <div class="faq-answer">
+              Southern Alberta Towing is a <strong>proud AMA contractor.</strong>
+              If you would like to use your AMA membership, your service
+              request must be booked directly through AMA using the number
+              on the back of your membership card or the AMA mobile app.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you transport classic cars, sports cars and motorcycles?
+            </summary>
+
+            <div class="faq-answer">
+              Yes. We provide towing and transport for classic vehicles,
+              sports cars and specialty vehicles. We also have a
+              <strong>dedicated motorcycle trailer</strong> for motorcycle
+              transport.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you provide accident and commercial recovery?
+            </summary>
+
+            <div class="faq-answer">
+              Yes. Southern Alberta Towing provides accident recovery and
+              commercial recovery services. Because every recovery is
+              different, call us with details about the vehicle, location
+              and situation so we can assess what equipment is required.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- CONTACT -->
 
     <section class="contact" id="contact">
@@ -1282,6 +1537,20 @@
 
   <footer>
     <div class="container">
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#commercial">Commercial & Fleet</a>
+        <a href="faq.html">FAQ</a>
+        <a
+          href="https://www.shutterclose.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Shutter Close Photography
+        </a>
+      </div>
 
       <strong>
         Southern Alberta Towing
