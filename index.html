@@ -7,6 +7,7 @@
   <title>Southern Alberta Towing | Towing & Recovery in Southern Alberta</title>
 
   <meta name="description" content="Southern Alberta Towing provides professional light, medium and heavy-duty towing, recovery and roadside assistance from Nanton, Alberta, serving Southern Alberta.">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -69,10 +70,11 @@
 
     header {
       background: #090909;
-      border-bottom: 3px solid #f47b20;
+      border-bottom: 3px solid #b87333;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
     }
 
     .nav {
@@ -91,7 +93,7 @@
     }
 
     .brand span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     nav {
@@ -103,14 +105,15 @@
     nav a {
       font-weight: 700;
       font-size: 0.95rem;
+      transition: color .25s ease;
     }
 
     nav a:hover {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .nav-call {
-      background: #f47b20;
+      background: #b87333;
       color: #111111;
       padding: 11px 18px;
       border-radius: 5px;
@@ -118,7 +121,7 @@
 
     .nav-call:hover {
       color: #111111;
-      background: #ff913f;
+      background: #d28a52;
     }
 
     /* HERO */
@@ -144,11 +147,12 @@
     }
 
     .eyebrow {
-      color: #f47b20;
+      color: #b87333;
       text-transform: uppercase;
       font-weight: 900;
       letter-spacing: 3px;
       margin-bottom: 12px;
+      text-shadow: 0 0 24px rgba(184,115,51,.18);
     }
 
     .hero h1 {
@@ -159,7 +163,7 @@
     }
 
     .hero h1 span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .hero p {
@@ -182,15 +186,25 @@
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: .5px;
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
     }
 
     .button-primary {
-      background: #f47b20;
+      background: #b87333;
       color: #111111;
+      box-shadow: 0 10px 24px rgba(0,0,0,.24);
     }
 
     .button-primary:hover {
-      background: #ff913f;
+      background: #d28a52;
+      box-shadow: 0 14px 30px rgba(0,0,0,.34);
     }
 
     .button-secondary {
@@ -205,8 +219,11 @@
     /* INTRO STRIP */
 
     .intro-strip {
-      background: #f47b20;
+      background: #b87333;
       color: #111111;
+      box-shadow: 0 10px 28px rgba(0,0,0,.3);
+      position: relative;
+      z-index: 2;
     }
 
     .intro-grid {
@@ -246,7 +263,7 @@
     }
 
     .section-heading h2 span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .section-heading p {
@@ -269,12 +286,27 @@
     .service-card {
       background: #1d1d1d;
       overflow: hidden;
-      border-bottom: 4px solid #f47b20;
+      border-bottom: 4px solid #b87333;
+      box-shadow: 0 14px 34px rgba(0,0,0,.28);
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 22px 46px rgba(0,0,0,.42);
     }
 
     .service-card img {
       height: 260px;
       object-fit: cover;
+      transition: filter .25s ease, transform .25s ease;
+    }
+
+    .service-card:hover img {
+      filter: brightness(1.06);
+      transform: scale(1.015);
     }
 
     .service-content {
@@ -300,9 +332,19 @@
       background: #090909;
     }
 
+    .feature-image {
+      overflow: hidden;
+    }
+
     .feature-image img {
       height: 100%;
       object-fit: cover;
+      transition: transform .4s ease, filter .4s ease;
+    }
+
+    .feature-image:hover img {
+      transform: scale(1.015);
+      filter: brightness(1.04);
     }
 
     .feature-copy {
@@ -320,7 +362,7 @@
     }
 
     .feature-copy h2 span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .feature-copy p {
@@ -349,6 +391,17 @@
     .commercial-image img {
       height: 480px;
       object-fit: cover;
+      box-shadow: 0 16px 38px rgba(0,0,0,.32);
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+    }
+
+    .commercial-image:hover img {
+      transform: translateY(-5px);
+      filter: brightness(1.06);
+      box-shadow: 0 24px 48px rgba(0,0,0,.42);
     }
 
     .commercial-copy h2 {
@@ -359,12 +412,16 @@
     }
 
     .commercial-copy h2 span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .commercial-copy p {
       color: #c7c7c7;
       margin-bottom: 18px;
+    }
+
+    .commercial-copy .button {
+      margin: 6px 8px 6px 0;
     }
 
     /* RECOVERY GALLERY */
@@ -382,14 +439,28 @@
     .gallery-grid img {
       height: 420px;
       object-fit: cover;
+      box-shadow: 0 16px 38px rgba(0,0,0,.32);
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: translateY(-5px);
+      filter: brightness(1.06);
+      box-shadow: 0 24px 48px rgba(0,0,0,.42);
     }
 
     /* SERVICE AREA */
 
     .service-area {
-      background: #f47b20;
+      background: #b87333;
       color: #111111;
       text-align: center;
+      box-shadow:
+        inset 0 12px 28px rgba(0,0,0,.08),
+        inset 0 -12px 28px rgba(0,0,0,.08);
     }
 
     .service-area h2 {
@@ -413,6 +484,11 @@
       background: #101010;
     }
 
+    .contact .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
     .contact h2 {
       font-size: clamp(2.5rem, 5vw, 4rem);
       text-transform: uppercase;
@@ -420,7 +496,7 @@
     }
 
     .contact h2 span {
-      color: #f47b20;
+      color: #b87333;
     }
 
     .contact p {
@@ -432,8 +508,24 @@
       display: block;
       font-size: clamp(2rem, 5vw, 3.6rem);
       font-weight: 900;
-      color: #f47b20;
+      color: #b87333;
       margin: 22px 0;
+      transition: color .25s ease, transform .25s ease;
+    }
+
+    .phone:hover {
+      color: #d28a52;
+      transform: translateY(-2px);
+    }
+
+    .email-link {
+      color: #b87333;
+      font-weight: 700;
+      transition: color .25s ease;
+    }
+
+    .email-link:hover {
+      color: #d28a52;
     }
 
     /* FOOTER */
@@ -449,6 +541,31 @@
 
     footer strong {
       color: #ffffff;
+    }
+
+    /* DEPTH & ENTRANCE MOTION */
+
+    .hero-content,
+    .section-heading,
+    .service-card,
+    .feature-copy,
+    .commercial-copy,
+    .commercial-image,
+    .gallery-grid img,
+    .contact .container {
+      animation: riseIn .7s ease both;
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* MOBILE */
@@ -513,6 +630,42 @@
       .service-card img {
         height: 230px;
       }
+
+      .commercial-copy .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+
+    /* ACCESSIBILITY */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .hero-content,
+      .section-heading,
+      .service-card,
+      .feature-copy,
+      .commercial-copy,
+      .commercial-image,
+      .gallery-grid img,
+      .contact .container {
+        animation: none;
+      }
+
+      .service-card,
+      .service-card img,
+      .feature-image img,
+      .commercial-image img,
+      .gallery-grid img,
+      .button,
+      .phone {
+        transition: none;
+      }
     }
   </style>
 </head>
@@ -536,10 +689,7 @@
     </div>
   </header>
 
-
   <main>
-
-    <!-- HERO -->
 
     <section class="hero">
       <div class="container">
@@ -569,9 +719,6 @@
       </div>
     </section>
 
-
-    <!-- QUICK CAPABILITIES -->
-
     <div class="intro-strip">
       <div class="container intro-grid">
         <div class="intro-item">Light & Medium Duty</div>
@@ -580,15 +727,15 @@
       </div>
     </div>
 
-
-    <!-- SERVICES -->
-
     <section class="services" id="services">
       <div class="container">
 
         <div class="section-heading">
           <div class="eyebrow">Our Services</div>
-          <h2>Ready When <span>You Need Us</span></h2>
+
+          <h2>
+            Ready When <span>You Need Us</span>
+          </h2>
 
           <p>
             From vehicle transport and roadside assistance to commercial
@@ -607,13 +754,13 @@
 
             <div class="service-content">
               <h3>Vehicle Towing & Transport</h3>
+
               <p>
                 Professional towing and transport for passenger vehicles,
                 trucks, classics, projects and specialty vehicles.
               </p>
             </div>
           </article>
-
 
           <article class="service-card">
             <img
@@ -623,13 +770,13 @@
 
             <div class="service-content">
               <h3>Heavy Duty Recovery</h3>
+
               <p>
                 Recovery capability for commercial trucks and challenging
                 roadside incidents throughout Southern Alberta.
               </p>
             </div>
           </article>
-
 
           <article class="service-card">
             <img
@@ -639,6 +786,7 @@
 
             <div class="service-content">
               <h3>Winching & Recovery</h3>
+
               <p>
                 Recovery assistance for vehicles and commercial units
                 stuck off-road or in difficult terrain.
@@ -649,9 +797,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- HEAVY DUTY FEATURE -->
 
     <section class="feature" id="heavy">
 
@@ -685,9 +830,6 @@
 
     </section>
 
-
-    <!-- COMMERCIAL -->
-
     <section class="commercial" id="commercial">
       <div class="container commercial-grid">
 
@@ -713,10 +855,12 @@
             Commercial Assistance
           </a>
 
-          <a class="button button-secondary" href="mailto:southernalbertatowing@gmail.com?subject=Commercial%20%26%20Fleet%20Inquiry">
-  Email Commercial & Fleet
-</a>
-          
+          <a
+            class="button button-secondary"
+            href="mailto:southernalbertatowing@gmail.com?subject=Commercial%20%26%20Fleet%20Inquiry"
+          >
+            Email Commercial & Fleet
+          </a>
         </div>
 
         <div class="commercial-image">
@@ -728,9 +872,6 @@
 
       </div>
     </section>
-
-
-    <!-- FLEET / GALLERY -->
 
     <section class="gallery">
       <div class="container">
@@ -750,7 +891,6 @@
         </div>
 
         <div class="gallery-grid">
-
           <img
             src="images/southern-alberta-towing-fleet.jpg"
             alt="Southern Alberta Towing fleet in Nanton Alberta"
@@ -760,13 +900,10 @@
             src="images/commercial-truck-winch-recovery.png"
             alt="Commercial vehicle recovery by Southern Alberta Towing"
           >
-
         </div>
+
       </div>
     </section>
-
-
-    <!-- SERVICE AREA -->
 
     <section class="service-area" id="area">
       <div class="container">
@@ -781,9 +918,6 @@
 
       </div>
     </section>
-
-
-    <!-- CONTACT -->
 
     <section class="contact" id="contact">
       <div class="container">
@@ -804,18 +938,18 @@
         </p>
 
         <p>
-  <a href="mailto:southernalbertatowing@gmail.com" style="color:#f47b20; font-weight:700;">
-    southernalbertatowing@gmail.com
-  </a>
-</p>
-        
+          <a
+            class="email-link"
+            href="mailto:southernalbertatowing@gmail.com"
+          >
+            southernalbertatowing@gmail.com
+          </a>
         </p>
 
       </div>
     </section>
 
   </main>
-
 
   <footer>
     <div class="container">
