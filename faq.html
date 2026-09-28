@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frequently Asked Questions | Southern Alberta Towing</title>
+
+  <meta name="description" content="Answers to frequently asked questions about Southern Alberta Towing, including 24/7 towing, roadside assistance, AMA service, accident recovery, commercial recovery, classic and sports car transport, motorcycles, holiday trailers and quotes.">
+
+  <link rel="canonical" href="https://southernalbertatowing.ca/faq.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0d0d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(9, 9, 9, .97);
+      border-bottom: 3px solid #b87333;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 1.15;
+    }
+
+    .brand span {
+      color: #b87333;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      font-weight: 700;
+      font-size: .95rem;
+      transition: color .25s ease;
+    }
+
+    nav a:hover {
+      color: #b87333;
+    }
+
+    .nav-call {
+      background: #b87333;
+      color: #111111;
+      padding: 11px 18px;
+      border-radius: 5px;
+    }
+
+    .nav-call:hover {
+      background: #d28a52;
+      color: #111111;
+    }
+
+    /* HERO */
+
+    .faq-hero {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5,5,5,.97) 0%,
+          rgba(5,5,5,.88) 40%,
+          rgba(5,5,5,.48) 72%,
+          rgba(5,5,5,.30) 100%
+        ),
+        url("images/heavy-duty-towing-hero.jpg") center/cover no-repeat;
+    }
+
+    .faq-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(
+          circle at 75% 45%,
+          rgba(184,115,51,.13),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          transparent 55%,
+          rgba(0,0,0,.75) 100%
+        );
+    }
+
+    .faq-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 45%;
+      height: 4px;
+      background: #b87333;
+      box-shadow: 0 0 24px rgba(184,115,51,.4);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 100px 0;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: 2.4px;
+      margin-bottom: 22px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(0,0,0,.38);
+      backdrop-filter: blur(5px);
+    }
+
+    .hero-kicker::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #b87333;
+      border-radius: 50%;
+      box-shadow: 0 0 14px rgba(184,115,51,.7);
+    }
+
+    .faq-hero h1 {
+      font-size: clamp(3.6rem, 7vw, 6.8rem);
+      line-height: .88;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      margin-bottom: 28px;
+      text-shadow: 0 8px 30px rgba(0,0,0,.45);
+    }
+
+    .faq-hero h1 span {
+      color: #b87333;
+    }
+
+    .faq-hero p {
+      color: #dedede;
+      max-width: 690px;
+      font-size: 1.15rem;
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      background: #090909;
+      border-bottom: 1px solid #292929;
+      box-shadow: 0 15px 40px rgba(0,0,0,.35);
+    }
+
+    .quick-nav-grid {
+      min-height: 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .quick-link {
+      padding: 25px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-right: 1px solid #292929;
+      color: #bdbdbd;
+      font-size: .76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      transition:
+        color .25s ease,
+        background .25s ease;
+    }
+
+    .quick-link:last-child {
+      border-right: none;
+    }
+
+    .quick-link:hover {
+      background: #141414;
+      color: #b87333;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      color: #b87333;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      max-width: 790px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2.3rem, 5vw, 4.1rem);
+      text-transform: uppercase;
+      line-height: .98;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 span {
+      color: #b87333;
+    }
+
+    .section-heading p {
+      color: #bdbdbd;
+      font-size: 1.05rem;
+    }
+
+    /* FAQ SECTIONS */
+
+    .faq-section {
+      background: #121212;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faq-section.alt {
+      background: #0b0b0b;
+    }
+
+    .faq-section::before {
+      content: "FAQ";
+      position: absolute;
+      right: 4%;
+      top: 45px;
+      font-size: clamp(7rem, 16vw, 14rem);
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(255,255,255,.018);
+      pointer-events: none;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+    }
+
+    details {
+      background: #191919;
+      border: 1px solid #292929;
+      border-left: 4px solid #b87333;
+      transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+    }
+
+    details:hover {
+      background: #1d1d1d;
+      border-color: #3a3a3a;
+      border-left-color: #d28a52;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(0,0,0,.24);
+    }
+
+    details[open] {
+      background: #1c1c1c;
+      border-color: #3a3a3a;
+      border-left-color: #d28a52;
+    }
+
+    summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+      padding: 24px 62px 24px 24px;
+      font-size: 1.04rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #b87333;
+      font-size: 1.8rem;
+      font-weight: 400;
+      transition: transform .25s ease;
+    }
+
+    details[open] summary::after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .answer {
+      padding: 0 24px 26px;
+      color: #bdbdbd;
+    }
+
+    .answer strong {
+      color: #ffffff;
+    }
+
+    .answer a {
+      color: #b87333;
+      font-weight: 800;
+    }
+
+    .answer a:hover {
+      color: #d28a52;
+    }
+
+    /* AMA CALLOUT */
+
+    .ama-callout {
+      margin-top: 28px;
+      padding: 28px 30px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(184,115,51,.14),
+          rgba(184,115,51,.03)
+        ),
+        #151515;
+      border: 1px solid #343434;
+      border-left: 5px solid #b87333;
+      box-shadow: 0 18px 40px rgba(0,0,0,.25);
+    }
+
+    .ama-badge {
+      min-width: 90px;
+      color: #b87333;
+      font-size: 1.15rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .ama-callout h3 {
+      font-size: 1.15rem;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .ama-callout p {
+      color: #bdbdbd;
+      font-size: .94rem;
+    }
+
+    /* QUOTE CTA */
+
+    .quote-band {
+      padding: 75px 0;
+      background: #b87333;
+      color: #111111;
+      box-shadow:
+        inset 0 15px 30px rgba(0,0,0,.08),
+        inset 0 -15px 30px rgba(0,0,0,.08);
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .quote-band h2 {
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      line-height: .95;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .quote-band p {
+      max-width: 700px;
+      font-weight: 700;
+    }
+
+    .dark-button {
+      display: inline-block;
+      padding: 16px 25px;
+      background: #101010;
+      color: #ffffff;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      border: 2px solid #101010;
+      transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease;
+    }
+
+    .dark-button:hover {
+      transform: translateY(-3px);
+      background: transparent;
+      color: #111111;
+    }
+
+    /* PHOTOGRAPHY */
+
+    .media-section {
+      background: #101010;
+      padding: 75px 0;
+    }
+
+    .media-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+      padding: 40px;
+      background:
+        linear-gradient(
+          115deg,
+          rgba(184,115,51,.09),
+          transparent 55%
+        ),
+        #171717;
+      border: 1px solid #2d2d2d;
+      border-bottom: 4px solid #b87333;
+      box-shadow: 0 20px 45px rgba(0,0,0,.28);
+    }
+
+    .media-card h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .media-card h2 span {
+      color: #b87333;
+    }
+
+    .media-card p {
+      color: #bdbdbd;
+      max-width: 720px;
+    }
+
+    .media-link {
+      display: inline-block;
+      white-space: nowrap;
+      padding: 14px 21px;
+      border: 2px solid #b87333;
+      color: #ffffff;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+    }
+
+    .media-link:hover {
+      background: #b87333;
+      color: #111111;
+      transform: translateY(-2px);
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background:
+        radial-gradient(
+          circle at 50% 10%,
+          rgba(184,115,51,.09),
+          transparent 30%
+        ),
+        #0a0a0a;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      text-transform: uppercase;
+      line-height: .95;
+      margin-bottom: 18px;
+    }
+
+    .contact h2 span {
+      color: #b87333;
+    }
+
+    .contact > .container > p {
+      color: #bdbdbd;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .phone {
+      display: block;
+      color: #b87333;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      margin: 25px 0 15px;
+      transition:
+        color .25s ease,
+        transform .25s ease;
+    }
+
+    .phone:hover {
+      color: #d28a52;
+      transform: translateY(-2px);
+    }
+
+    .email {
+      color: #b87333;
+      font-weight: 800;
+    }
+
+    .email:hover {
+      color: #d28a52;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 21px;
+      border: 2px solid #ffffff;
+      font-weight: 900;
+      text-transform: uppercase;
+      transition:
+        background .25s ease,
+        color .25s ease;
+    }
+
+    .back-home:hover {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 32px 0;
+      text-align: center;
+      background: #050505;
+      border-top: 1px solid #292929;
+      color: #8f8f8f;
+      font-size: .9rem;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    .footer-links {
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: #b87333;
+      font-weight: 800;
+      margin: 0 8px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      nav a:not(.nav-call) {
+        display: none;
+      }
+
+      .faq-hero {
+        min-height: 560px;
+        align-items: flex-end;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(0,0,0,.40) 0%,
+            rgba(0,0,0,.72) 48%,
+            rgba(0,0,0,.95) 100%
+          ),
+          url("images/heavy-duty-towing-hero.jpg") center/cover no-repeat;
+      }
+
+      .hero-content {
+        padding: 100px 0 75px;
+      }
+
+      .quick-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quick-link:nth-child(2) {
+        border-right: none;
+      }
+
+      .quick-link:nth-child(1),
+      .quick-link:nth-child(2) {
+        border-bottom: 1px solid #292929;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quote-grid,
+      .media-card {
+        grid-template-columns: 1fr;
+      }
+
+      .ama-callout {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .brand {
+        font-size: 1rem;
+      }
+
+      .nav-call {
+        padding: 10px 12px;
+        font-size: .82rem;
+      }
+
+      .faq-hero h1 {
+        font-size: 3.2rem;
+        letter-spacing: -1px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .quick-link {
+        min-height: 90px;
+        padding: 18px 10px;
+        font-size: .67rem;
+      }
+
+      summary {
+        padding: 22px 55px 22px 20px;
+      }
+
+      .answer {
+        padding: 0 20px 23px;
+      }
+
+      .media-card {
+        padding: 28px 24px;
+      }
+
+      .media-link,
+      .dark-button {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      details,
+      .dark-button,
+      .media-link,
+      .phone {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <a class="brand" href="index.html">
+        SOUTHERN ALBERTA<br>
+        <span>TOWING</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#towing">Towing</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#specialty">Specialty</a>
+
+        <a class="nav-call" href="tel:4036520850">
+          Call 403-652-0850
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="faq-hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-kicker">
+            Answers Before You Need The Truck
+          </div>
+
+          <h1>
+            Frequently Asked<br>
+            <span>Questions</span>
+          </h1>
+
+          <p>
+            From roadside assistance and quotes to commercial recovery,
+            specialty vehicles and AMA service, here are answers to some
+            of the questions we hear most often.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- QUICK NAV -->
+
+    <div class="quick-nav">
+
+      <div class="container quick-nav-grid">
+
+        <a class="quick-link" href="#towing">
+          Towing & Roadside
+        </a>
+
+        <a class="quick-link" href="#commercial">
+          Commercial & Recovery
+        </a>
+
+        <a class="quick-link" href="#specialty">
+          Specialty Transport
+        </a>
+
+        <a class="quick-link" href="#general">
+          Service & General
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- TOWING -->
+
+    <section class="faq-section" id="towing">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Towing & Roadside Assistance
+          </div>
+
+          <h2>
+            When You Need<br>
+            <span>Help On The Road</span>
+          </h2>
+
+          <p>
+            Straight answers about requesting service, roadside assistance,
+            pricing and what to expect when you call Southern Alberta Towing.
+          </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+          <details>
+            <summary>
+              Are you available 24/7?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing provides 24/7 towing and
+              recovery service. If you require assistance, call
+              <a href="tel:4036520850">403-652-0850</a>.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Will I receive a quote before a tow truck is dispatched?
+            </summary>
+
+            <div class="answer">
+              Yes. We can provide you with a quote before dispatching a
+              tow truck. Give us a call with your location, destination,
+              vehicle information and a brief description of the situation,
+              and we'll provide pricing based on the service required.
+              Once you're ready to proceed, we can arrange the tow or service.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              What information should I have ready when I call?
+            </summary>
+
+            <div class="answer">
+              If possible, have your current location, vehicle type,
+              destination and a brief description of what happened ready.
+              For recoveries or unusual situations, additional details or
+              photos may help us determine what equipment is required.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you provide roadside assistance?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing provides roadside assistance
+              in addition to towing and recovery. Call us and let us know
+              what is happening so we can determine the appropriate service
+              for your situation.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              I have AMA. Can I book towing or roadside assistance directly through Southern Alberta Towing?
+            </summary>
+
+            <div class="answer">
+              Southern Alberta Towing is a <strong>proud AMA contractor.</strong>
+              However, if you would like to use your AMA membership for towing
+              or roadside assistance, your service request must be booked
+              directly through AMA. You can request service by calling the
+              number on the back of your AMA membership card or through the
+              AMA mobile app. Once your request has been submitted, AMA will
+              coordinate the service with an available contractor.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can I call Southern Alberta Towing directly if I am not using AMA?
+            </summary>
+
+            <div class="answer">
+              Yes. For private towing, roadside assistance or recovery,
+              call us directly at
+              <a href="tel:4036520850">403-652-0850</a>
+              to discuss the service you require and receive a quote.
+            </div>
+          </details>
+
+        </div>
+
+        <div class="ama-callout">
+
+          <div class="ama-badge">
+            AMA
+          </div>
+
+          <div>
+            <h3>
+              Using Your AMA Membership?
+            </h3>
+
+            <p>
+              Southern Alberta Towing is a proud AMA contractor.
+              To request service using your AMA membership, contact AMA
+              directly using the number on the back of your membership
+              card or submit your request through the AMA mobile app.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- COMMERCIAL -->
+
+    <section class="faq-section alt" id="commercial">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Commercial & Recovery
+          </div>
+
+          <h2>
+            Bigger Problems.<br>
+            <span>Serious Capability.</span>
+          </h2>
+
+          <p>
+            Commercial towing and recovery can involve very different
+            circumstances from a standard vehicle tow. Here are some of
+            the services Southern Alberta Towing can provide.
+          </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+          <details>
+            <summary>
+              Do you provide accident recovery?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing provides accident recovery
+              services for passenger vehicles and commercial vehicles.
+              Every incident is different, so providing information about
+              the vehicle, location and circumstances helps us determine
+              the appropriate equipment and response.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you provide heavy-duty and commercial recovery?
+            </summary>
+
+            <div class="answer">
+              Yes. We provide towing and recovery support for commercial
+              vehicles and challenging roadside incidents. Call us with
+              details about the situation so we can assess the equipment
+              and response required.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can you help with a vehicle that is stuck or off the road?
+            </summary>
+
+            <div class="answer">
+              We provide winching and recovery services for vehicles and
+              commercial units in a variety of situations. Because every
+              recovery is different, information about the vehicle,
+              location, terrain and circumstances can help us assess
+              what will be required.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you work with commercial fleets and businesses?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing works with commercial operators,
+              fleets and businesses requiring dependable towing and recovery
+              support. Contact us to discuss your company's needs and the
+              type of service you require.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can you assist after a commercial vehicle accident?
+            </summary>
+
+            <div class="answer">
+              Yes. Our commercial recovery capabilities include accident
+              recovery and assistance involving commercial vehicles.
+              The response required will depend on the circumstances of
+              the incident, vehicle and location.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can a business contact you about ongoing towing support?
+            </summary>
+
+            <div class="answer">
+              Yes. Businesses and commercial operators can contact
+              Southern Alberta Towing to discuss ongoing towing and
+              recovery needs. Call
+              <a href="tel:4036520850">403-652-0850</a>
+              or email
+              <a href="mailto:southernalbertatowing@gmail.com">
+                southernalbertatowing@gmail.com
+              </a>.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SPECIALTY -->
+
+    <section class="faq-section" id="specialty">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Specialty Vehicle Transport
+          </div>
+
+          <h2>
+            Not Everything<br>
+            <span>Is An Everyday Tow</span>
+          </h2>
+
+          <p>
+            Some vehicles need a different transport approach.
+            Southern Alberta Towing provides transport options for a
+            variety of specialty and recreational vehicles.
+          </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+          <details>
+            <summary>
+              Do you tow classic vehicles?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing transports classic vehicles.
+              When you call, let us know what type of vehicle you have,
+              its condition and where it needs to go so we can determine
+              the appropriate transport option.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can you transport sports cars?
+            </summary>
+
+            <div class="answer">
+              Yes. We provide towing and transport for sports cars and
+              specialty vehicles. Vehicle details are helpful when booking
+              so we can plan the appropriate equipment for the transport.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you tow motorcycles?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing has a
+              <strong>dedicated motorcycle trailer</strong>
+              for motorcycle transport. Call us with the motorcycle's
+              location and destination to arrange service.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do you tow holiday trailers?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing provides towing for holiday
+              trailers. When requesting service, provide the trailer
+              information, location, destination and details about the
+              situation so we can assess the appropriate service.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can you transport project or specialty vehicles?
+            </summary>
+
+            <div class="answer">
+              Yes. We transport a variety of project and specialty
+              vehicles. Because vehicle condition and transport requirements
+              can vary, call us with the details and we'll discuss the
+              appropriate option for your vehicle.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can I arrange vehicle transport in advance?
+            </summary>
+
+            <div class="answer">
+              Yes. Not every tow is an emergency. Contact us to discuss
+              planned vehicle transport, your pickup location, destination
+              and the type of vehicle being moved.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- GENERAL -->
+
+    <section class="faq-section alt" id="general">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Service & General Questions
+          </div>
+
+          <h2>
+            A Few More<br>
+            <span>Things To Know</span>
+          </h2>
+
+          <p>
+            Can't find your exact situation? That's normal. Towing and
+            recovery calls don't always fit neatly into a checkbox.
+          </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+          <details>
+            <summary>
+              Where is Southern Alberta Towing based?
+            </summary>
+
+            <div class="answer">
+              Southern Alberta Towing is based at
+              <strong>1916 21 Street in Nanton, Alberta.</strong>
+              We provide towing, roadside assistance and recovery services
+              throughout Southern Alberta.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              What areas do you serve?
+            </summary>
+
+            <div class="answer">
+              We are based in Nanton and provide towing and recovery
+              throughout Southern Alberta. If you're unsure whether we
+              can assist at your location, call
+              <a href="tel:4036520850">403-652-0850</a>
+              and tell us where you are and what service you require.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Are your operators certified?
+            </summary>
+
+            <div class="answer">
+              Yes. Southern Alberta Towing uses certified professional
+              operators as part of our towing and recovery operations.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Do I need to know exactly what type of tow truck I need?
+            </summary>
+
+            <div class="answer">
+              No. Tell us about the vehicle and situation when you call.
+              We'll use that information to determine the appropriate
+              equipment for the service.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Can I send photos of the vehicle or recovery situation?
+            </summary>
+
+            <div class="answer">
+              For unusual towing or recovery situations, photos can be
+              helpful when assessing the vehicle, surroundings and
+              equipment that may be required. Call us first and we can
+              let you know what information would be useful.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              What if my situation isn't listed on this page?
+            </summary>
+
+            <div class="answer">
+              Give us a call. Every towing and recovery situation is a
+              little different, and this FAQ cannot cover every scenario.
+              Tell us what is happening and we'll discuss whether and how
+              Southern Alberta Towing can assist.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quote-band">
+
+      <div class="container quote-grid">
+
+        <div>
+
+          <h2>
+            Want Pricing Before Dispatch?
+          </h2>
+
+          <p>
+            Call with your location, destination, vehicle information and
+            a brief description of the service you need. We'll provide a
+            quote before arranging your tow.
+          </p>
+
+        </div>
+
+        <a class="dark-button" href="tel:4036520850">
+          Call 403-652-0850
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- SHUTTER CLOSE -->
+
+    <section class="media-section">
+
+      <div class="container">
+
+        <div class="media-card">
+
+          <div>
+
+            <div class="eyebrow">
+              Commercial Photography & Visual Media
+            </div>
+
+            <h2>
+              Need Your Fleet To<br>
+              <span>Look As Good As It Works?</span>
+            </h2>
+
+            <p>
+              Looking for professional photography for your fleet,
+              equipment or business? Visit Shutter Close Photography
+              for commercial photography and visual media services
+              in Southern Alberta.
+            </p>
+
+          </div>
+
+          <a
+            class="media-link"
+            href="https://www.shutterclose.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            Visit Shutter Close
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+      <div class="container">
+
+        <div class="eyebrow">
+          Still Have Questions?
+        </div>
+
+        <h2>
+          Talk To <span>Us</span>
+        </h2>
+
+        <p>
+          Tell us where you are, what you're driving and what happened.
+          We'll help determine what service is appropriate for the situation.
+        </p>
+
+        <a class="phone" href="tel:4036520850">
+          403-652-0850
+        </a>
+
+        <p>
+          1916 21 Street<br>
+          Nanton, Alberta T0L 1R0
+        </p>
+
+        <p>
+          <a
+            class="email"
+            href="mailto:southernalbertatowing@gmail.com"
+          >
+            southernalbertatowing@gmail.com
+          </a>
+        </p>
+
+        <a class="back-home" href="index.html">
+          Back To Home
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="https://www.shutterclose.com/" target="_blank" rel="noopener">
+          Shutter Close Photography
+        </a>
+      </div>
+
+      <strong>
+        Southern Alberta Towing
+      </strong>
+
+      <br>
+
+      1916 21 Street, Nanton, Alberta T0L 1R0 · 403-652-0850
+
+      <br><br>
+
+      © 2026 Southern Alberta Towing. All rights reserved.
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
